@@ -22,7 +22,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div>
       <a href='https://sandbox003.coubic.com/hamasan-sandbox'>クービックのトップページへ</a>
     </div>
-    <iframe id="CoubicWidgetCalendar" width="100%" height="600" style="border:none;"></iframe>
+    <iframe id="CoubicWidgetCalendar" src="https://coubic.com/hamasan/widget/calendar?from_pc=month&from_sp=month" width="100%" height="600" style="border:none;"></iframe>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -33,7 +33,7 @@ ga(function(tracker) {
   var iframe = document.querySelector('#CoubicWidgetCalendar');
   if (iframe) {
     var linker = new window.gaplugins.Linker(tracker);
-    iframe.src = linker.decorate('https://coubic.com/hamasan/widget/calendar');
+    iframe.src = linker.decorate(iframe.src);
   }
 });
     </script>
